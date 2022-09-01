@@ -1,0 +1,17 @@
+<svg width="38" height="34" viewBox="0 0 38 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M1 7.64941H36.8824V29.0001C36.8824 31.2092 35.0915 33.0001 32.8824 33.0001H4.99999C2.79086 33.0001 1 31.2092 1 29.0001V7.64941Z" fill="white"/>
+<path d="M1 4C1 2.34314 2.34315 1 4 1H33.3484C35.5575 1 37.3484 2.79086 37.3484 5V7.64935H1V4Z" fill="white"/>
+<ellipse cx="25.5391" cy="4.18254" rx="0.772471" ry="0.688891" fill="#0D0B49"/>
+<ellipse cx="29.5176" cy="4.18254" rx="0.772471" ry="0.688891" fill="#0D0B49"/>
+<ellipse cx="33.4863" cy="4.18254" rx="0.772471" ry="0.688891" fill="#0D0B49"/>
+<path d="M13.583 10.5586L14.6275 12.2664C14.841 12.6154 14.8204 13.0592 14.5754 13.3869L13.583 14.7144" stroke="#0D0B49" stroke-width="1.2" stroke-linecap="round"/>
+<path d="M6.12402 10.5586L4.83009 12.1452C4.50619 12.5424 4.53499 13.1202 4.8968 13.4832L6.12402 14.7144" stroke="#0D0B49" stroke-width="1.2" stroke-linecap="round"/>
+<path d="M4.26367 18.6626H9.15673M6.12769 21.1561H15.4478M4.26367 23.6496H11.2537" stroke="#0D0B49" stroke-width="1.2" stroke-linecap="round"/>
+<path d="M6.35906 1H5C2.79086 1 1 2.79086 1 5V7.64935M11.9511 1H33.1154C35.3245 1 37.1154 2.79086 37.1154 5V7.64935M16.8442 4.32468H5.19405M1 7.64935V29C1 31.2091 2.79086 33 5 33H18.0092M1 7.64935H18.0092M37.1154 7.64935V29C37.1154 31.2091 35.3245 33 33.1154 33H18.0092M37.1154 7.64935H18.0092M18.0092 7.64935V33" stroke="#0D0B49" stroke-width="1.2" stroke-linecap="round"/>
+<path d="M8.69336 14.7147L11.2564 10.7666" stroke="#0D0B49" stroke-width="1.2" stroke-linecap="round"/>
+<path d="M5.19531 25.7266H10.0884" stroke="#0D0B49" stroke-width="1.2" stroke-linecap="round"/>
+<path d="M4.26367 28.0127H9.15673" stroke="#0D0B49" stroke-width="1.2" stroke-linecap="round"/>
+<path d="M5.6582 30.0913H12.1823" stroke="#0D0B49" stroke-width="1.2" stroke-linecap="round"/>
+<rect x="20.1025" y="10.5586" width="14.4462" height="7.48052" rx="3" fill="#FF9B21" stroke="#0D0B49" stroke-width="1.2"/>
+<rect x="20.1025" y="20.1167" width="14.4462" height="9.97402" rx="3" fill="#5C63AB" stroke="#0D0B49" stroke-width="1.2"/>
+</svg>
