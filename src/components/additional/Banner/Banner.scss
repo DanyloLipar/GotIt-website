@@ -1,0 +1,125 @@
+@import "../../../styles/blocks/vars.scss";
+@import "../../../styles/blocks/mixins.scss";
+
+
+.banner {
+    border-radius: 10px;
+    max-width: 1064px;
+    min-width: 300px;
+    margin: 0 auto;
+    height: auto;
+    padding: 0 20px;
+
+    @include onTablet {
+        max-width: 764px;
+    }
+
+    @include onMobile {
+        padding: 0;
+        max-width: none;
+        width: 100vw;
+        margin: 0;
+        padding: 0;
+    }
+
+    &__box {
+        background: url("../../../assets/photos/banner/gradient.svg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding: 72px 0;
+        width: 100%;
+        border-radius: 10px;
+
+        @include onTablet {
+            padding-top: 69px;
+            padding-bottom: 45px;
+        }
+
+        @include onMobile {
+            border-radius: 0px;
+            padding-top: 31px;
+        }
+
+        &-title {
+            font-family: "Catamaran";
+            font-style: normal;
+            font-weight: 800;
+            font-size: 43px;
+            line-height: 64px;
+            text-align: center;
+            color: $default-white;
+            width: 100%;
+
+            @include onTablet {
+                font-size: 36px;
+                line-height: 43px;
+            }
+
+            @include onMobile {
+                font-size: 27px;
+                line-height: 32px;
+                padding: 0 61px;
+            }
+
+        }
+
+        &-desc {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            font-family: "SF Pro Display";
+            text-align: center;
+            color: $banner-text;
+            padding-top: 25px;
+            padding-bottom: 62px;
+
+            @include onTablet {
+                padding-top: 10px;
+                font-size: 18px;
+                line-height: 30px;
+                padding-bottom: 42px;
+            }
+
+            @include onMobile {
+                padding-top: 14px;
+                font-size: 16px;
+                line-height: 24px;
+                padding: 14px 50px 30px;
+            }
+        }
+
+        &-link {
+            display: block;
+            margin: 0 auto;
+            font-style: normal;
+            font-weight: 800;
+            font-size: 16px;
+            background: $text-color-one;
+            border-radius: 90px;
+            text-align: center;
+            letter-spacing: 0.02em;
+            font-family: "SF Pro Display";
+            color: $default-white;
+            padding: 18px 37px;
+            width: 200px;
+
+            @include onTablet {
+                padding: 13px 32px;
+                line-height: 26px;
+            }
+
+            @include onTablet {
+                font-size: 14px;
+                line-height: 17px;
+                padding: 13px 50px;
+            }
+        }
+    }
+
+    &-in {
+        margin-bottom: -89px;
+        z-index: 999;
+        position: relative;
+    }
+}

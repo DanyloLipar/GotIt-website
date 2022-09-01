@@ -1,0 +1,78 @@
+@import "../../../styles/blocks/vars.scss";
+@import "../../../styles/blocks/mixins.scss";
+
+
+.card {
+    max-width: 320px;
+    margin-bottom: 60px;
+
+    @include onTablet {
+        max-width: 350px;
+    }
+
+    @include onMobile {
+        max-width: none;
+    }
+
+    &__image {
+        max-height: 200px;
+        height: 100%;
+        margin-bottom: 7px;
+        overflow: hidden;
+
+        &-item {
+            width: 100%;
+            border-top-right-radius: 10px;
+            border-top-left-radius: 10px;
+        }
+    }
+
+    &__date {
+        font-family: 'SF Pro Display';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 21px;
+        letter-spacing: 0.04em;
+        color: $blog-txt;
+    }
+
+    &__title {
+        font-family: "SF Pro Display";
+        font-style: normal;
+        font-weight: 800;
+        font-size: 20px;
+        line-height: 30px;
+        margin-top: 13px;
+        color: $text-color-one;
+        display: block;
+    }
+
+    &__txt {
+        font-family: "SF Pro Display";
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 22px;
+        color: $blog-txt;
+        margin-top: 9px;
+    }
+
+    &__links {
+        margin-top: 13px;
+
+        &-btn {
+            background: $blog-btn;
+            border: 1px solid $example-border;
+            border-radius: 67px;
+            color: $text-color-one;
+            margin-right: 25px;
+            padding: 6px 18px;
+            font-family: "SF Pro Display";
+            font-style: normal;
+            font-weight: 800;
+            font-size: 12px;
+            cursor: pointer;
+        }
+    }
+}

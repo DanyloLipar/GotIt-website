@@ -1,0 +1,48 @@
+@import "../../../styles/blocks/vars.scss";
+@import "../../../styles/blocks/mixins.scss";
+
+
+.approach {
+    display: flex;
+
+    @include onTablet {
+        justify-content: center;
+    }
+
+    @include onMobile {
+        display: none;
+    }
+
+    &__list {
+        list-style-type: none;
+        width: 100%;
+        max-width: 508px;
+        flex-grow: 1;
+        margin-right: 20px;
+
+        @include onTablet {
+            max-width: 374px;
+        }
+    }
+
+    &__desc {
+        max-width: 530px;
+        background: $default-white;
+        box-shadow: 0px 24px 60px rgb(53 52 116 / 8%);
+        border-radius: 10px;
+        padding: 50px;
+        font-family: "SF Pro Display";
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 163%;
+        color: $text-color-two;
+        margin-bottom: 18px;
+
+        @include onTablet {
+            padding: 30px;
+            max-width: 374px;
+            font-size: 16px;
+        }
+    }
+}

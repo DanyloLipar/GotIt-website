@@ -1,0 +1,219 @@
+@import "../../../styles/blocks/vars.scss";
+@import "../../../styles/blocks/mixins.scss";
+
+.footer {
+    padding-top: 180px;
+    font-family: "Catamaran";
+    background: $footer-bckg;
+
+    @include onMobile {
+        padding-bottom: 100px;
+    }
+
+    &__container {
+        max-width: 1064px;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        margin: 0 auto;
+
+        @include onTablet {
+            max-width: 764px;
+        }
+
+        @include onMobile {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        &-list {
+            max-width: 45vw;
+            flex-grow: 1;
+
+            @include onTablet {
+                max-width: 60vw;
+            }
+        }
+    }
+}
+
+.logo {
+    width: 140px;
+    box-sizing: border-box;
+
+    @include onTablet {
+        width: 230px;
+    }
+
+    @include onMobile {
+        width: 122px;
+    }
+
+    &__reload {
+
+        &-img {
+            width: 140px;
+            height: auto;
+
+            @include onTablet {
+                margin-bottom: 47px;
+            }
+
+            @include onMobile {
+                width: 122px;
+                margin-bottom: 40px;
+            }
+        }
+
+    }
+}
+
+.ls {
+    margin-bottom: 92px;
+
+    &__mobile {
+        display: none;
+        list-style-type: none;
+
+        @include onMobile {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 18px;
+
+        }
+
+        &-item {
+            font-family: 'Catamaran';
+            font-style: normal;
+            font-weight: 800;
+            font-size: 20px;
+            line-height: 29px;
+            color: $text-color-one;
+        }
+    }
+}
+
+.content {
+    display: flex;
+    justify-content: space-around;
+
+    @include onTablet {
+        justify-content: space-between;
+    }
+
+    @include onMobile {
+        display: none;
+    }
+
+    &__services,
+    &__portfolio,
+    &__contacts {
+        display: flex;
+        flex-direction: column;
+        list-style-type: none;
+
+        &>li:first-child {
+            padding-bottom: 18px;
+        }
+    }
+}
+
+.link {
+    margin-bottom: 10px;
+
+    &__gen {
+        font-family: "Catamaran";
+        color: $text-color-one;
+        font-size: 20px;
+        font-weight: 800;
+        box-sizing: border-box;
+    }
+
+    &__go {
+        font-family: 'SF Pro Display';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        text-transform: capitalize;
+        color: $footer-text;
+
+        &-adress {
+            display: block;
+        }
+    }
+
+    &__mail {
+        text-transform: lowercase;
+    }
+}
+
+.clutch {
+    &__icons {
+        @include onMobile {
+            display: flex;
+            justify-content: center;
+            gap: 23px;
+        }
+
+        &-item {
+            padding-bottom: 25px;
+            padding-right: 10px;
+
+            @include onMobile {
+                padding: 0;
+            }
+
+            &>img {
+                width: 26px;
+                height: auto;
+            }
+        }
+    }
+
+    &__response {
+
+
+        @include onMobile {
+            margin: 0 auto;
+            width: 211px;
+        }
+
+        &-own {
+            border: none;
+
+            @include onMobile {
+                width: 100%;
+            }
+        }
+    }
+
+    &-tablet {
+        display: none;
+
+        @include onTablet {
+            display: block;
+        }
+
+        @include onMobile {
+            display: none;
+        }
+    }
+
+    &-desktop {
+        @include onTablet {
+            display: none;
+        }
+
+        @include onMobile {
+            max-width: none;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 33px;
+        }
+    }
+}

@@ -1,0 +1,193 @@
+@import "../../styles/blocks/vars.scss";
+@import "../../styles/blocks/mixins.scss";
+
+.contact {
+    padding: 235px 20px 233px;
+
+    @include onTablet {
+        padding-top: 140px;
+        padding-bottom: 170px;
+    }
+
+    &__info {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+        max-width: 1064px;
+
+        @include onTablet {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        @include onMobile {
+            align-items: flex-start;
+        }
+    }
+}
+
+.in {
+    @include onTablet {
+        width: 70%;
+    }
+
+    &__title {
+        font-family: "Catamaran";
+        color: $text-color-one;
+        font-style: normal;
+        font-weight: 800;
+        font-size: 58px;
+        padding-bottom: 1vw;
+
+        @include onTablet {
+            font-size: 36px;
+            line-height: 43px;
+        }
+
+        &>span {
+            display: block;
+
+            @include onTablet {
+                display: inline-block;
+            }
+        }
+    }
+
+    &__desc {
+        line-height: 34px;
+        font-family: "SF Pro Display";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 22px;
+        max-width: 412px;
+        color: $text-color-two;
+        margin-top: 24px;
+
+        @include onTablet {
+            font-size: 18px;
+            line-height: 28px;
+            margin-top: 16px;
+            max-width: 338px;
+        }
+    }
+
+    &__mailing {
+        display: flex;
+        align-items: center;
+        margin-top: 93px;
+        width: 100%;
+
+        @include onTablet {
+            margin-top: 24px;
+        }
+
+        &-photobox {
+            background: $poster-bckg;
+            border: 1px solid $poster-border;
+            box-sizing: border-box;
+            min-width: 55px;
+            height: 55px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 20px;
+
+            @include onMobile {
+                margin-right: 10px;
+            }
+        }
+
+        &-text {
+            font-family: 'SF Pro Display';
+            font-style: normal;
+            font-weight: 800;
+            font-size: 22px;
+            line-height: 37px;
+            color: $text-color-one;
+        }
+    }
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 61px;
+    width: 50%;
+
+    @include onTablet {
+        width: 70%;
+        margin-top: 55px;
+    }
+
+    @include onMobile {
+        width: 100%;
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        &-inp {
+            border: none;
+            border-bottom: 1px solid $inp-border;
+            padding-bottom: 15px;
+            padding-left: 5px;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            color: $inp-text;
+            font-family: "SF Pro Display";
+            margin-bottom: 25px;
+            width: 100%;
+
+            &:focus {
+                outline: none;
+            }
+        }
+
+        &-fail {
+            font-family: "SF Pro Display";
+            color: $fail-color;
+            font-size: 1em;
+            font-weight: 400;
+            display: block;
+        }
+    }
+
+    &__btn {
+        font-size: 16px;
+        letter-spacing: 0.02em;
+        font-family: "SF Pro Display";
+        font-weight: 600;
+        padding: 18px 34px;
+        background: $main-click;
+        max-width: 192px;
+        border-radius: 90px;
+        color: $default-white;
+        outline: none;
+        border: none;
+
+        @include onMobile {
+            width: 100%;
+            max-width: none;
+        }
+    }
+
+    &__invalid {
+        display: flex;
+        align-items: center;
+
+        &-text {
+            line-height: 34px;
+            font-family: "SF Pro Display";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            width: 100%;
+            color: $text-color-two;
+            margin-left: 12px;
+        }
+    }
+}

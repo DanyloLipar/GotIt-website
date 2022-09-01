@@ -1,0 +1,91 @@
+@import "../../styles/blocks/vars.scss";
+@import "../../styles/blocks/mixins.scss";
+
+.problem {
+    padding-top: 145px;
+    padding-bottom: 95px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto;
+        background: url("../../assets/photos/error/bckg.png");
+        background-size: cover;
+
+        @include onTablet {
+            background: none;
+        }
+
+        &-photo {
+            max-width: 478px;
+            height: auto;
+            margin-top: 31px;
+
+            @include onTablet {
+                max-width: 288px;
+            }
+
+            &>img {
+                width: 100%;
+            }
+        }
+
+        &-title {
+            font-family: 'Catamaran';
+            font-style: normal;
+            font-weight: 800;
+            font-size: 56px;
+            line-height: 67px;
+            letter-spacing: -0.01em;
+            color: $text-color-one;
+            margin-top: 31px;
+
+            @include onTablet {
+                font-size: 36px;
+            }
+
+            &>span {
+                @include onTablet {
+                    display: block;
+                    text-align: center;
+                }
+            }
+        }
+
+        &-desc {
+            font-family: 'SF Pro Display';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 22px;
+            line-height: 33px;
+            color: $text-color-two;
+            margin-top: 18px;
+
+            @include onTablet {
+                font-size: 18px;
+                margin-top: 14px;
+            }
+        }
+
+        &-link {
+            padding: 21px 55px;
+            background: $main-click;
+            border-radius: 90px;
+            margin-top: 44px;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 16px;
+            font-family: "SF Pro Display";
+            letter-spacing: 0.02em;
+            text-transform: uppercase;
+            color: $default-white;
+
+            @include onTablet {
+                margin-top: 42px;
+            }
+        }
+    }
+}

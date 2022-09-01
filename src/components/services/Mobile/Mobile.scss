@@ -1,0 +1,299 @@
+@import "../../../styles/blocks/vars.scss";
+@import "../../../styles/blocks/mixins.scss";
+
+.start {
+  position: relative;
+  padding-bottom: 33vw;
+  margin-top: 115px;
+  margin-bottom: 50px;
+
+  @include onMobile {
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+
+  &__bg {
+    position: absolute;
+    width: 70%;
+    top: -42px;
+    z-index: -1;
+    right: 0;
+    padding-bottom: 22vw;
+    animation: fadeIn 1s;
+
+    @include onMobile {
+      display: none;
+    }
+
+    & > img {
+      width: 100%;
+    }
+  }
+
+  &__additional {
+    position: absolute;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 900;
+    top: 29vw;
+    font-size: 56px;
+    right: 5vw;
+    z-index: 9999999;
+    color: $default-white;
+    text-shadow: 0px 4px 18px rgb(28 33 86 / 17%);
+    animation: fadeIn 2s;
+
+    @include onMobile {
+      display: none;
+    }
+  }
+
+  &__letter {
+    width: 46vw;
+    position: absolute;
+    right: 0;
+    z-index: 2;
+    top: -10vw;
+    animation: fadeIn 1s;
+
+    @include onMobile {
+      display: none;
+    }
+
+    & > img {
+      width: 100%;
+    }
+  }
+}
+
+.gen {
+  padding-top: 4vw;
+  max-width: 1064px;
+  margin: 0 auto;
+  display: flex;
+
+  @include onMobile {
+    display: flex;
+    flex-direction: column;
+    padding-top: 0;
+  }
+
+  @include onTablet {
+    max-width: 764px;
+  }
+
+  &__intro {
+    padding-top: 90px;
+    padding-left: 25px;
+    animation: fadeIn 2s;
+
+    @include onTablet {
+      animation: none;
+    }
+
+    @include onMobile {
+      padding-top: 0;
+    }
+
+    &-title {
+      font-family: "Catamaran";
+      font-style: normal;
+      font-weight: 800;
+      font-size: 44px;
+      line-height: 53px;
+      max-width: 480px;
+      color: $text-color-one;
+
+      @include onTablet {
+        font-size: 36px;
+        line-height: 43px;
+        max-width: 325px;
+      }
+    }
+
+    &-text {
+      font-family: "SF Pro Display";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 22px;
+      line-height: 27px;
+      padding-top: 25px;
+      color: $text-color-two;
+      max-width: 490px;
+      padding-bottom: 75px;
+
+      @include onTablet {
+        font-size: 18px;
+        line-height: 27px;
+        max-width: 334px;
+      }
+    }
+
+    &-link {
+      padding: 21px 55px;
+      background: $main-click;
+      border-radius: 90px;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 16px;
+      font-family: "SF Pro Display";
+      letter-spacing: 0.02em;
+      text-transform: uppercase;
+      color: $default-white;
+
+      @include onTablet {
+        padding: 13px 32px;
+      }
+    }
+  }
+
+  &__phone {
+    position: relative;
+    z-index: 3;
+    animation: fadeIn 2s;
+
+    @include onMobile {
+      display: none;
+    }
+
+    &-mob {
+      font-family: "Montserrat";
+      font-style: normal;
+      font-weight: 900;
+      font-size: 56px;
+      color: $default-white;
+      text-shadow: 0px 4px 18px rgb(28 33 86 / 17%);
+      padding-left: 11vw;
+    }
+
+    &-image {
+      position: absolute;
+      top: 118px;
+      left: -30px;
+
+      & > img {
+        width: 100%;
+      }
+    }
+  }
+
+  &__mobi {
+    display: none;
+    animation: fadeIn 2s;
+
+    @include onMobile {
+      display: block;
+      width: 100%;
+    }
+
+    &-img {
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+}
+
+.phones {
+  margin-bottom: 94px;
+  margin-top: 20vw;
+
+  @include onTablet {
+    margin-top: 188px;
+  }
+
+  @include onMobile {
+    margin-bottom: 0;
+  }
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 1120px;
+    padding: 0 20px;
+
+    @include onTablet {
+      max-width: 764px;
+    }
+
+    @include onMobile {
+      flex-direction: column;
+      align-items: initial;
+    }
+  }
+}
+
+.images {
+  display: flex;
+
+  &__ios {
+    margin-top: -75px;
+    max-width: 360px;
+
+    @include onMobile {
+      margin-top: 0;
+    }
+
+    & > img {
+      width: 100%;
+    }
+  }
+
+  &__android {
+    max-width: 360px;
+    margin-top: 60px;
+
+    & > img {
+      width: 100%;
+    }
+  }
+
+  &-desktop {
+    @include onMobile {
+      display: none;
+    }
+  }
+
+  &-mobile {
+    display: none;
+
+    @include onMobile {
+      display: flex;
+      margin-top: 50px;
+    }
+  }
+}
+
+.pres {
+  display: flex;
+  flex-direction: column;
+  max-width: 378px;
+
+  @include onMobile {
+    max-width: none;
+  }
+
+  &__item {
+    margin-bottom: 50px;
+
+    &-title {
+      font-style: normal;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 150%;
+      font-family: "SF Pro Display";
+      color: $text-color-one;
+      padding-bottom: 14px;
+    }
+
+    &-desc {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 27px;
+      font-family: "SF Pro Display";
+      color: $text-color-two;
+    }
+  }
+}

@@ -1,0 +1,191 @@
+@import "../../../styles/blocks/vars.scss";
+@import "../../../styles/blocks/mixins.scss";
+
+.processing {
+    &__box {
+        max-width: 1068px;
+        margin: 0 auto;
+        padding: 0 20px;
+
+        &-title {
+            font-family: 'Catamaran';
+            font-style: normal;
+            max-width: 708px;
+            font-weight: 800;
+            font-size: 42px;
+            line-height: 50px;
+            text-align: center;
+            margin: 0 auto;
+            color: $text-color-one;
+
+            @include onTablet {
+                font-size: 36px;
+                line-height: 43px;
+            }
+
+            @include onMobile {
+                font-size: 30px;
+                line-height: 36px;
+                max-width: 343px;
+            }
+        }
+    }
+
+    &__selected {
+        display: flex;
+        justify-content: center;
+        max-width: 1064px;
+        margin: 0 auto;
+        margin-top: 62px;
+        height: 200px;
+
+        @include onTablet {
+            display: none;
+        }
+
+        &-txt {
+            font-family: 'SF Pro Display';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 29px;
+            text-align: center;
+            color: $blog-txt;
+            max-width: 680px;
+            text-align: center;
+        }
+    }
+}
+
+.swtch {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 80px;
+    list-style-type: none;
+
+    @include onTablet {
+        display: none;
+    }
+}
+
+.mainly {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__num {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 60px;
+        height: 60px;
+        border: 1px solid $balls-border;
+        border-radius: 90px;
+        background-color: $default-white;
+        transition: background-color 0.8s;
+        cursor: pointer;
+
+        &-txt {
+            font-family: 'Catamaran';
+            font-style: normal;
+            font-weight: 800;
+            font-size: 28px;
+            line-height: 46px;
+            color: $text-color-one;
+        }
+    }
+
+    &__name {
+        font-family: 'SF Pro Display';
+        font-style: normal;
+        font-weight: 800;
+        font-size: 20px;
+        line-height: 30px;
+        color: $text-color-one;
+        max-width: 164px;
+        text-align: center;
+        margin-top: 20px;
+    }
+}
+
+.unfolded {
+    display: none;
+
+    @include onTablet {
+        display: none;
+        max-width: 764px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        gap: 17px;
+        flex-wrap: wrap;
+        margin-top: 68px;
+        list-style-type: none;
+    }
+
+    @include onMobile {
+        flex-direction: column;
+    }
+
+    &__folder {
+        margin-bottom: 58px;
+        max-width: 373px;
+
+        @include onMobile {
+            max-width: none;
+        }
+
+        &-text {
+            font-family: 'SF Pro Display';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 26px;
+            color: $text-color-two;
+            width: 37vw;
+
+            @include onMobile {
+                width: 100%;
+            }
+        }
+    }
+}
+
+.most {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+
+    @include onMobile {
+        margin-bottom: 14px;
+    }
+
+    &__num {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 42px;
+        height: 42px;
+        border: 1px solid $balls-border;
+        border-radius: 90px;
+
+        &-item {
+            font-family: 'Catamaran';
+            font-style: normal;
+            font-weight: 800;
+            font-size: 22px;
+            line-height: 33px;
+            color: $text-color-one;
+        }
+
+        &-name {
+            margin-left: 10px;
+            font-family: 'SF Pro Display';
+            font-style: normal;
+            font-weight: 800;
+            font-size: 20px;
+            line-height: 30px;
+            color: $text-color-one;
+        }
+    }
+}

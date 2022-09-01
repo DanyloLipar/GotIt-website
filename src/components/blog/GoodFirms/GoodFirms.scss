@@ -1,0 +1,47 @@
+@import "../../../styles/blocks/vars.scss";
+@import "../../../styles/blocks/mixins.scss";
+
+.goodfirm {
+    padding-top: 184px;
+    padding-bottom: 170px;
+
+    @include onTablet {
+        padding-top: 140px;
+    }
+
+    @include onTablet {
+        padding-top: 120px;
+    }
+
+    &__photo {
+        max-width: 1064px;
+        margin: 0 auto;
+    }
+
+    &__content {
+        &-title {
+            padding: 30px 0;
+            padding-bottom: 15px;
+            font-family: "Catamaran";
+            font-style: normal;
+            font-weight: bold;
+            font-size: 34px;
+            line-height: 130%;
+            color: $text-color-one;
+        }
+
+        &-text {
+            font-family: "SF Pro Display";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 19px;
+            align-items: center;
+            line-height: 30px;
+            color: $blog-txt;
+
+            &>a {
+                text-decoration: underline;
+            }
+        }
+    }
+}

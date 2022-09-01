@@ -1,0 +1,78 @@
+@import "../../../styles/blocks/vars.scss";
+@import "../../../styles/blocks/mixins.scss";
+
+.blog {
+    margin: 0 auto;
+    padding-top: 140px;
+    max-width: 1064px;
+    padding: 140px 20px 0;
+
+    @include onTablet {
+        max-width: 764px;
+    }
+
+    &__title {
+        margin-bottom: 4vw;
+        font-family: "Catamaran";
+        font-style: normal;
+        font-weight: 800;
+        font-size: 56px;
+        line-height: 67px;
+        color: $text-color-one;
+        text-align: center;
+        padding: 0 15px;
+
+        @include onTablet {
+            font-size: 40px;
+            line-height: 60px;
+        }
+
+        @include onMobile {
+            font-size: 36px;
+            line-height: 43px;
+            margin-bottom: 7vw;
+        }
+    }
+
+    &__filtering {
+        &-btn {
+            background: $blog-btn;
+            border: 1px solid $example-border;
+            border-radius: 67px;
+            color: $text-color-one;
+            margin-right: 25px;
+            padding: 12px 42px;
+            font-family: "SF Pro Display";
+            font-style: normal;
+            font-weight: 800;
+            font-size: 16px;
+            cursor: pointer;
+            margin-bottom: 15px;
+        }
+    }
+
+    &__bckg {
+        background: $main-click;
+        color: $default-white;
+    }
+
+    &__list {
+        margin-top: 58px;
+        margin-bottom: 150px;
+        list-style-type: none;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        @include onTablet {
+            margin-top: 65px;
+        }
+
+        @include onMobile {
+            margin-top: 55px;
+            justify-content: flex-start;
+            flex-direction: column;
+            flex-wrap: nowrap;
+        }
+    }
+}

@@ -1,0 +1,177 @@
+@import "../../../styles/blocks/vars.scss";
+@import "../../../styles/blocks/mixins.scss";
+
+
+.values {
+    padding: 230px 0;
+
+    @include onMobile {
+        padding-top: 150px;
+    }
+
+    &__title {
+        font-family: 'Catamaran';
+        font-style: normal;
+        font-weight: 800;
+        font-size: 48px;
+        line-height: 72px;
+        color: $text-color-one;
+        max-width: 1064px;
+        margin: 0 auto;
+        padding: 0 20px;
+
+        @include onTablet {
+            font-size: 36px;
+            line-height: 43px;
+            max-width: 764px;
+        }
+
+        @include onMobile {
+            font-size: 30px;
+            line-height: 36px;
+        }
+    }
+
+    &__container {
+        margin-top: 42px;
+        background: $applying-bckg;
+    }
+}
+
+.carousl {
+    max-width: 1064px;
+    margin: 0 auto;
+    padding: 95px 20px 128px;
+
+    @include onTablet {
+        max-width: 764px;
+    }
+
+    @include onMobile {
+        padding-top: 40px;
+        padding-bottom: 42px;
+    }
+
+    &__inner {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    &__list {
+        display: flex;
+        gap: 17px;
+        list-style-type: none;
+        margin-top: 37px;
+
+        @include onMobile {
+            flex-direction: column;
+        }
+    }
+
+    &-desktop {
+        @include onMobile {
+            display: none;
+        }
+    }
+
+    &-mobile {
+        display: none;
+
+        @include onMobile {
+            display: block;
+        }
+    }
+}
+
+.swt {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    max-width: 108px;
+
+    &__arrow {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: $default-white;
+        border: none;
+        border-radius: 90px;
+        height: 44px;
+        width: 44px;
+        cursor: pointer
+    }
+}
+
+.sheet {
+    background: $default-white;
+    border-radius: 10px;
+    max-width: 521px;
+    height: 378px;
+    width: 100%;
+    box-shadow: 0px 24px 60px rgba(53, 52, 116, 0.16);
+
+    @include onMobile {
+        height: 100%;
+        max-width: none;
+    }
+
+    &__items {
+        padding: 42px 51px 0 43px;
+
+        @include onMobile {
+            padding: 18px;
+        }
+
+        &-icon {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 90px;
+            width: 90px;
+            height: 90px;
+            background: $poster-bckg;
+            border: 1px solid $poster-border;
+
+            @include onMobile {
+                width: 80px;
+                height: 80px;
+
+                &-img {
+                    width: 100%;
+                }
+            }
+        }
+
+        &-name {
+            font-family: 'SF Pro Display';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 30px;
+            color: $text-color-one;
+            margin-top: 21px;
+        }
+
+        &-text {
+            font-family: 'SF Pro Display';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 29px;
+            color: $blog-txt;
+
+            @include onMobile {
+                font-size: 16px;
+                line-height: 24px;
+            }
+        }
+    }
+}
+
+.slide {
+    position: relative;
+    opacity: 0;
+    inset: 0;
+    transition: opacity 200ms ease-in-out;
+    transition-delay: 200ms;
+}

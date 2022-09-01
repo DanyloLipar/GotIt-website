@@ -1,0 +1,99 @@
+@import "../../styles/blocks/vars.scss";
+@import "../../styles/blocks/mixins.scss";
+
+.build {
+  position: relative;
+
+  &__desc {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 1064px;
+    padding: 0 20px;
+    animation: fadeInUp 2s;
+
+    @include onTablet {
+      max-width: 764px;
+    }
+
+    @include onMobile {
+      flex-direction: column;
+    }
+
+    &-title {
+      max-width: 507px;
+      font-family: "Catamaran";
+      font-style: normal;
+      font-weight: 800;
+      font-size: 48px;
+      line-height: 120%;
+      color: $text-color-one;
+      flex-grow: 1;
+
+      & > span {
+        display: block;
+      }
+
+      @include onTablet {
+        font-size: 36px;
+        line-height: 43px;
+        max-width: 302px;
+      }
+
+      @include onMobile {
+        max-width: 343px;
+        font-size: 30px;
+        line-height: 36px;
+      }
+    }
+
+    &-content {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  &__bg {
+    position: absolute;
+    left: 0px;
+    top: -70px;
+    width: 57vw;
+    z-index: -1;
+    max-width: 580px;
+
+    @include onMobile {
+      width: 90vw;
+      top: -200px;
+    }
+
+    &-img {
+      width: 100%;
+    }
+  }
+}
+
+.content-simple {
+  max-width: 480px;
+  flex-grow: 1;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  font-family: "SF Pro Display";
+  color: $text-color-two;
+  padding-bottom: 25px;
+
+  @include onTablet {
+    font-size: 18px;
+    line-height: 27px;
+    max-width: 409px;
+  }
+
+  @include onMobile {
+    font-size: 16px;
+    line-height: 24px;
+    padding-bottom: 0;
+    padding-top: 14px;
+    max-width: none;
+  }
+}

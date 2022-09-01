@@ -1,0 +1,155 @@
+@import "../../styles//blocks/vars.scss";
+@import "../../styles/blocks/mixins.scss";
+
+.representation {
+    &__container {
+        max-width: 1090px;
+        padding: 154px 16px 196px;
+        margin: 0 auto;
+
+        @include onTablet {
+            max-width: 764px;
+        }
+
+
+        &-heading {
+            font-family: 'Catamaran';
+            font-style: normal;
+            font-weight: 800;
+            font-size: 56px;
+            line-height: 67px;
+            text-align: center;
+            color: $text-color-one;
+
+            @include onTablet {
+                font-size: 40px;
+                line-height: 60px;
+            }
+
+            @include onMobile {
+                font-size: 36px;
+                line-height: 43px;
+            }
+        }
+    }
+}
+
+.col {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    padding-top: 70px;
+
+    @include onTablet {
+        padding-top: 49px;
+        gap: 16px;
+    }
+
+    @include onMobile {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 53px;
+    }
+}
+
+.case {
+    width: 47%;
+
+    &:nth-child(2),
+    &:nth-child(4),
+    &:nth-child(6) {
+        margin-top: 100px;
+    }
+
+    &:first-child,
+    &:nth-child(4),
+    &:nth-child(5),
+    &:nth-child(6) {
+        @include onMobile {
+            display: none;
+        }
+    }
+
+    &:nth-child(7),
+    &:nth-child(8) {
+        display: none;
+
+        @include onMobile {
+            display: block;
+        }
+    }
+
+    @include onTablet {
+        max-width: 374px;
+
+        &:nth-child(2),
+        &:nth-child(4),
+        &:nth-child(6) {
+            margin-top: 50px;
+        }
+    }
+
+    @include onMobile {
+        width: 100%;
+
+
+        &:nth-child(2),
+        &:nth-child(4),
+        &:nth-child(6) {
+            margin-top: 0;
+        }
+    }
+
+    &__picture {
+        width: 100%;
+
+        &-img {
+            object-fit: cover;
+            width: 100%;
+        }
+    }
+
+    &__text {
+        text-align: center;
+
+        &-title {
+            font-family: 'SF Pro Display';
+            font-style: normal;
+            font-weight: 800;
+            font-size: 22px;
+            line-height: 33px;
+            color: $text-color-one;
+            margin-top: 28px;
+
+            @include onTablet {
+                margin-top: 20px;
+            }
+
+            &-mobile {
+                display: none;
+
+                @include onTablet {
+                    display: block;
+                }
+            }
+
+            &-desktop {
+                @include onMobile {
+                    display: none;
+                }
+            }
+        }
+
+        &-desc {
+            font-family: 'SF Pro Display';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 29px;
+            color: $text-color-two;
+            margin-top: 4px;
+        }
+    }
+}

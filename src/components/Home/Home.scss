@@ -1,0 +1,652 @@
+@import "../../styles/blocks/vars.scss";
+@import "../../styles/blocks/mixins.scss";
+
+.home {
+  &__carousel {
+    &-mobile {
+      display: none;
+
+      @include onMobile {
+        display: block;
+      }
+    }
+
+    &-desktop {
+      @include onMobile {
+        display: none;
+      }
+    }
+  }
+}
+
+.main {
+  margin-top: 170px;
+  margin-bottom: 127px;
+  position: relative;
+  height: 53vw;
+  animation: fadeIn 2s;
+
+  @include onTablet {
+    margin-bottom: 108px;
+  }
+
+  @include onMobile {
+    background-size: contain;
+    height: 100%;
+    margin-top: 140px;
+    margin-bottom: 150px;
+    animation: none;
+  }
+
+  &__linetop {
+    position: absolute;
+    top: 22%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    overflow: hidden;
+    z-index: 3;
+
+    &-svg {
+      width: 200vw;
+      margin-left: -50vw;
+      height: 43vh;
+      box-sizing: border-box;
+    }
+  }
+}
+
+.ball {
+  &__left {
+    position: absolute;
+    width: 39px;
+    height: 39px;
+    background: $left-ball;
+    overflow: hidden;
+    border-radius: 50%;
+    left: -7px;
+    bottom: -17px;
+  }
+
+  &__top {
+    position: absolute;
+    width: 39px;
+    height: 39px;
+    background: $top-ball;
+    border-radius: 50%;
+    overflow: hidden;
+    top: -17%;
+    right: 10%;
+
+    &-small {
+      width: 11px;
+      height: 11px;
+      position: absolute;
+      background: $top-ball-small;
+      border-radius: 50%;
+      overflow: hidden;
+      top: -20%;
+      right: 30%;
+    }
+  }
+
+  &__bottom {
+    position: absolute;
+    background: $bottom-ball;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    overflow: hidden;
+    bottom: -25%;
+    left: 50%;
+  }
+
+  &__center {
+    position: absolute;
+    background: $center-ball;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    overflow: hidden;
+    bottom: 13%;
+    left: 45%;
+  }
+}
+
+.container {
+  max-width: 1064px;
+  margin: 0 auto;
+  display: flex;
+  width: 100%;
+
+  @include onMobile {
+    flex-direction: column;
+  }
+
+  &__bg {
+    position: absolute;
+    top: -60px;
+    left: -10px;
+    z-index: -1;
+    padding-right: 18px;
+
+    @include onMobile {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: static;
+      padding: 8px;
+      max-width: 100%;
+      margin: 0 auto;
+    }
+
+    &-mobi {
+      display: none;
+      object-fit: cover;
+      width: 100%;
+
+      @include onMobile {
+        display: block;
+      }
+    }
+
+    &-img {
+      object-fit: cover;
+      width: 100%;
+
+      @include onMobile {
+        display: none;
+      }
+    }
+  }
+
+  @include onTablet {
+    max-width: 764px;
+  }
+
+  &__info {
+    visibility: visible;
+    animation-delay: 0.3s;
+    animation-name: fadeIn;
+    position: relative;
+    padding-left: 20px;
+    margin-top: 7vw;
+    z-index: 9999;
+
+    &-title {
+      font-family: "Catamaran";
+      font-style: normal;
+      font-weight: 800;
+      font-size: 44px;
+      line-height: 120%;
+      max-width: 600px;
+      color: $text-color-one;
+
+      @include onTablet {
+        font-size: 36px;
+        line-height: 43px;
+        max-width: 325px;
+      }
+    }
+
+    &-desc {
+      font-family: "SF Pro Display";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 22px;
+      line-height: 33px;
+      padding-top: 25px;
+      color: $text-color-two;
+      max-width: 490px;
+      padding-bottom: 110px;
+
+      @include onTablet {
+        font-size: 18px;
+        line-height: 27px;
+        max-width: 325px;
+        padding-bottom: 35px;
+      }
+    }
+
+    &-click {
+      padding: 12px 30px;
+      background: $main-click;
+      border-radius: 90px;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 16px;
+      font-family: "SF Pro Display";
+      letter-spacing: 0.02em;
+      text-transform: uppercase;
+      color: $default-white;
+    }
+  }
+
+  &__images {
+    margin-left: -2vw;
+    margin-top: 7vw;
+    position: relative;
+
+    &-layer {
+      position: absolute;
+      z-index: 2;
+      top: -118px;
+      left: -159px;
+
+      & > img {
+        visibility: visible;
+        animation-delay: 0.3s;
+        animation-name: fadeIn;
+        box-sizing: border-box;
+      }
+    }
+
+    &-phone {
+      z-index: 5;
+      position: relative;
+      animation-name: fadeIn;
+      animation-fill-mode: both;
+
+      & > img {
+        visibility: visible;
+        animation-delay: 0.3s;
+        animation-name: fadeIn;
+      }
+    }
+
+    &-girl {
+      position: absolute;
+      max-width: 345px;
+      z-index: 5;
+      right: -235px;
+      bottom: -38px;
+
+      & > img {
+        visibility: visible;
+        animation-delay: 0.4s;
+        animation-name: fadeIn;
+        width: 100%;
+      }
+    }
+  }
+}
+
+.phone {
+  &::after {
+    content: "";
+    background: $phone-ball;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: block;
+    position: absolute;
+    overflow: hidden;
+    bottom: -20px;
+  }
+
+  &__dev {
+    position: absolute;
+    top: 130px;
+    left: -50px;
+  }
+
+  &__ui {
+    position: absolute;
+    top: 149px;
+    left: 134px;
+  }
+
+  &__mobile {
+    position: absolute;
+    top: 266px;
+    left: 106px;
+  }
+
+  &__cons {
+    position: absolute;
+    top: 250px;
+    left: -80px;
+  }
+}
+
+.benefits {
+  margin-top: 7vw;
+  padding-right: 15px;
+  padding-left: 15px;
+
+  &__title {
+    font-family: "Catamaran";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 72px;
+    text-align: center;
+    color: $text-color-one;
+
+    @include onTablet {
+      font-size: 36px;
+      line-height: 43px;
+    }
+
+    @include onMobile {
+      font-size: 30px;
+      line-height: 45px;
+    }
+  }
+
+  &__description {
+    font-family: "SF Pro Display";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 150%;
+    text-align: center;
+    color: $text-color-two;
+    max-width: 625px;
+    margin: 0 auto;
+    padding-top: 30px;
+
+    @include onTablet {
+      font-size: 18px;
+      line-height: 27px;
+      padding-top: 10px;
+    }
+
+    @include onMobile {
+      font-size: 20px;
+      line-height: 30px;
+    }
+  }
+}
+
+.illustration {
+  padding-top: 107px;
+  max-width: 1064px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+
+  @include onTablet {
+    padding-top: 83px;
+    max-width: 764px;
+  }
+
+  @include onMobile {
+    flex-direction: column;
+    align-items: center;
+    gap: 55px;
+  }
+
+  &__box {
+    max-width: 305px;
+
+    &-photo {
+      height: 110px;
+      margin: 0 auto;
+      display: block;
+    }
+
+    &-name {
+      font-family: "Catamaran";
+      font-style: normal;
+      font-weight: bold;
+      font-size: 24px;
+      text-align: center;
+      text-transform: capitalize;
+      padding-top: 45px;
+      padding-bottom: 15px;
+      color: $text-color-one;
+
+      @include onMobile {
+        padding-top: 15px;
+        padding-bottom: 6px;
+      }
+    }
+
+    &-small {
+      font-family: "SF Pro Display";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 27px;
+      text-align: center;
+      color: $text-color-two;
+
+      @include onTablet {
+        font-size: 16px;
+        line-height: 24px;
+        max-width: 244px;
+      }
+    }
+  }
+}
+
+.help {
+  width: 100%;
+  max-width: 1064px;
+  margin: 0 auto;
+  margin-top: 232px;
+  margin-bottom: 13vw;
+
+  @include onTablet {
+    max-width: 764px;
+    margin-top: 129px;
+  }
+
+  @include onMobile {
+    margin-top: 170px;
+  }
+
+  &__title {
+    font-family: "Catamaran";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 150%;
+    text-align: left;
+    color: $text-color-one;
+    padding: 0 20px;
+
+    @include onTablet {
+      font-size: 36px;
+      line-height: 43px;
+    }
+
+    @include onMobile {
+      font-size: 30px;
+      line-height: 36px;
+    }
+  }
+
+  &__desc {
+    font-family: "SF Pro Display";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 150%;
+    text-align: left;
+    color: $text-color-two;
+    max-width: 625px;
+    padding: 30px 20px 0;
+
+    @include onTablet {
+      font-size: 18px;
+      line-height: 27px;
+      padding-top: 14px;
+    }
+  }
+
+  &__items {
+    display: flex;
+    gap: 17px;
+    flex-wrap: wrap;
+    max-width: 1064px;
+    width: 94vw;
+    min-width: 300px;
+    margin: 0 auto;
+    margin-top: 70px;
+
+    @include onTablet {
+      max-width: 764px;
+    }
+
+    @include onMobile {
+      flex-direction: column;
+      margin-top: 42px;
+    }
+  }
+}
+
+.example {
+  width: 35vw;
+  max-width: 515px;
+  flex-grow: 1;
+  padding: 25px;
+  box-shadow: 0px 24px 60px rgb(53 52 116 / 8%);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+  transition: 0.6s;
+  cursor: pointer;
+  box-sizing: border-box;
+
+  @include onTablet {
+    max-width: 373px;
+  }
+
+  @include onMobile {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 0;
+  }
+
+  &:hover {
+    background: $exapmle-hovered-bckg;
+  }
+
+  &:hover > * {
+    color: $example-hovered-text;
+  }
+
+  &__box {
+    width: 100px;
+    min-width: 82px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: $exapmle-bckg;
+    border: 1px solid $example-border;
+    border-radius: 50%;
+
+    @include onMobile {
+      width: 82px;
+      height: 82px;
+    }
+  }
+
+  &__txt {
+    font-family: "Catamaran";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 24px;
+    text-transform: capitalize;
+    color: $text-color-one;
+    padding-left: 24px;
+
+    @include onMobile {
+      font-size: 20px;
+      line-height: 30px;
+    }
+  }
+}
+
+.testimonials {
+  padding: 147px 20px 140px;
+
+  @include onTablet {
+    padding-bottom: 80px;
+    padding-top: 140px;
+  }
+
+  @include onMobile {
+    padding-top: 119px;
+  }
+
+  &__container {
+    max-width: 1064px;
+    margin: 0 auto;
+
+    @include onTablet {
+      max-width: 764px;
+    }
+  }
+}
+
+.expos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &__gen {
+    font-family: "Catamaran";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 72px;
+    color: $text-color-one;
+
+    @include onTablet {
+      font-size: 36px;
+      line-height: 43px;
+    }
+  }
+
+  &__simple {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 27px;
+    font-family: "SF Pro Display";
+    padding-top: 20px;
+    max-width: 520px;
+    text-align: center;
+    color: #666e77;
+
+    @include onTablet {
+      font-size: 18px;
+      line-height: 27px;
+    }
+  }
+}
+
+.resp {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+
+  &__table {
+    border: none;
+    overflow: hidden;
+    display: block;
+    height: 758px;
+    margin-left: 20px;
+
+    @include onTablet {
+      width: 100%;
+      height: 940px;
+      margin-left: 0;
+    }
+
+    @include onMobile {
+      height: calc(940px + 10vw);
+    }
+
+    @media (max-width: 567px) {
+      height: calc(940px + 50vw);
+    }
+  }
+}

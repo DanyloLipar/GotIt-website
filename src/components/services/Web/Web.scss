@@ -1,0 +1,476 @@
+@import "../../../styles/blocks/vars.scss";
+@import "../../../styles/blocks/mixins.scss";
+
+.web {
+  position: relative;
+  padding-bottom: 22vw;
+  margin-bottom: 8vw;
+
+  &__mobi {
+    display: none;
+
+    @include onMobile {
+      display: flex;
+      justify-content: end;
+      width: 100%;
+      right: 0;
+    }
+
+    &-img {
+      width: 100%;
+    }
+  }
+}
+
+.topic {
+  padding-top: 4vw;
+  max-width: 1064px;
+  margin: 0 auto;
+  display: flex;
+  margin-top: 110px;
+
+  @include onTablet {
+    max-width: 764px;
+  }
+
+  @include onMobile {
+    margin-top: 0;
+    padding-top: 0;
+  }
+
+  &__letter {
+    width: 49vw;
+    position: absolute;
+    right: 0;
+    z-index: 2;
+    top: -6vw;
+    animation: fadeIn 1s;
+
+    @include onTablet {
+      animation: none;
+    }
+
+    @include onMobile {
+      display: none;
+    }
+
+    & > img {
+      width: 100%;
+    }
+  }
+
+  &__intro {
+    padding-top: 90px;
+    padding-left: 25px;
+    margin-right: 20px;
+    position: relative;
+    z-index: 9999;
+    animation: fadeIn 2s;
+
+    @include onMobile {
+      padding-top: 0;
+    }
+
+    &-title {
+      font-family: "Catamaran";
+      font-style: normal;
+      font-weight: 800;
+      font-size: 44px;
+      line-height: 120%;
+      max-width: 540px;
+      color: $text-color-one;
+
+      @include onTablet {
+        font-size: 36px;
+        line-height: 43px;
+        max-width: 333px;
+      }
+    }
+
+    &-text {
+      font-family: "SF Pro Display";
+      font-style: normal;
+      font-weight: normal;
+      font-size: 22px;
+      line-height: 34px;
+      padding-top: 25px;
+      color: $text-color-two;
+      max-width: 490px;
+      padding-bottom: 75px;
+
+      @include onTablet {
+        font-size: 18px;
+        line-height: 27px;
+        padding-bottom: 58px;
+      }
+
+      @include onMobile {
+        line-height: 28px;
+      }
+    }
+
+    &-link {
+      padding: 18px 37px;
+      background: $main-click;
+      border-radius: 90px;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 16px;
+      font-family: "SF Pro Display";
+      letter-spacing: 0.02em;
+      text-transform: uppercase;
+      color: $default-white;
+
+      @include onTablet {
+        padding: 13px 32px;
+      }
+    }
+  }
+
+  &__web {
+    position: relative;
+    z-index: 3;
+    animation: fadeIn 2s;
+
+    &-big {
+      font-family: "Montserrat";
+      font-style: normal;
+      font-weight: 900;
+      font-size: 56px;
+      color: $default-white;
+      text-shadow: 0px 4px 18px rgb(28 33 86 / 17%);
+      padding-left: 2vw;
+      padding-bottom: 4vw;
+
+      @include onTablet {
+        font-size: 41.3065px;
+        line-height: 50px;
+      }
+
+      @include onMobile {
+        display: none;
+      }
+    }
+
+    &-image {
+      max-width: 762px;
+      position: absolute;
+      width: 50vw;
+      left: -54px;
+
+      @include onMobile {
+        display: none;
+      }
+
+      & > img {
+        width: 100%;
+      }
+    }
+  }
+
+  &__bg {
+    position: absolute;
+    width: 70%;
+    top: -42px;
+    z-index: -1;
+    right: 0;
+    padding-bottom: 22vw;
+    animation: fadeIn 1s;
+
+    @include onMobile {
+      display: none;
+    }
+
+    & > img {
+      width: 100%;
+    }
+  }
+
+  &__code {
+    position: absolute;
+    left: 0;
+    top: 570px;
+    z-index: -1;
+    animation: fadeIn 2s;
+
+    @include onTablet {
+      display: none;
+    }
+
+    & > img {
+      width: 100%;
+    }
+  }
+}
+
+.lifecycle {
+  margin: 0 auto;
+  max-width: 1064px;
+  padding: 0 25px;
+  padding-top: 233px;
+
+  @include onTablet {
+    padding-top: 179px;
+  }
+
+  @include onMobile {
+    padding-top: 150px;
+  }
+
+  &__title {
+    font-family: "Catamaran";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 48px;
+    color: $text-color-one;
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 62px;
+
+    @include onTablet {
+      font-size: 36px;
+      line-height: 43px;
+      padding-bottom: 72px;
+    }
+
+    @include onMobile {
+      font-size: 30px;
+      line-height: 36px;
+      max-width: 343px;
+      padding-bottom: 42px;
+    }
+  }
+}
+
+.why {
+  margin: 0 auto;
+  max-width: 1064px;
+  padding: 0 25px;
+  margin-top: 16vw;
+  margin-bottom: 13vw;
+
+  @include onTablet {
+    max-width: 764px;
+  }
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+
+    @include onMobile {
+      flex-direction: column;
+      justify-content: center;
+      gap: 14px;
+    }
+
+    &-title {
+      max-width: 507px;
+      font-family: "Catamaran";
+      font-style: normal;
+      font-weight: 800;
+      font-size: 48px;
+      line-height: 120%;
+      color: $text-color-one;
+      flex-grow: 1;
+
+      @include onTablet {
+        font-size: 36px;
+        line-height: 43px;
+      }
+    }
+
+    &-txt {
+      max-width: 615px;
+      flex-grow: 1;
+      margin-left: 15px;
+
+      @include onTablet {
+        max-width: 490px;
+      }
+
+      @include onMobile {
+        margin-left: 0;
+        max-width: none;
+      }
+
+      &-small {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 150%;
+        font-family: "SF Pro Display";
+        color: #666e77;
+        padding-bottom: 25px;
+      }
+    }
+  }
+}
+
+.information {
+  position: relative;
+  margin-bottom: 18vw;
+  margin-top: 9vw;
+
+  &__container {
+    margin: 0 auto;
+    max-width: 1064px;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+
+    @include onTablet {
+      max-width: 764px;
+      justify-content: center;
+      gap: 16px;
+    }
+
+    @include onMobile {
+      flex-direction: column;
+      gap: 92px;
+    }
+  }
+
+  &__bg {
+    position: absolute;
+    left: 0px;
+    top: -400px;
+    width: 25vw;
+    z-index: -1;
+    max-width: 300px;
+
+    & > img {
+      width: 100%;
+    }
+  }
+}
+
+.notitia {
+  max-width: 316px;
+
+  @include onMobile {
+    max-width: none;
+  }
+
+  &__head {
+    display: flex;
+  }
+
+  &__desc {
+    font-family: "SF Pro Display";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 29px;
+    color: $text-color-two;
+  }
+}
+
+.tit {
+  position: relative;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 30px;
+  font-family: "SF Pro Display";
+  color: $text-color-one;
+  padding-bottom: 25px;
+
+  &__number {
+    position: absolute;
+    top: -25px;
+    right: -50px;
+    z-index: -5;
+
+    @include onTablet {
+      right: -17px;
+    }
+
+    @include onMobile {
+      right: -60px;
+    }
+
+    &::after {
+      content: "";
+      display: block;
+      width: 69px;
+      height: 57px;
+      background: $default-white;
+      opacity: 0.98;
+      filter: blur(14px);
+      bottom: -8px;
+      left: -20px;
+      position: absolute;
+    }
+  }
+}
+
+.fallout {
+  display: none;
+
+  @include onMobile {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    list-style-type: none;
+  }
+
+  &__box {
+    background: $default-white;
+    box-shadow: 0px 24px 60px rgba(53, 52, 116, 0.08);
+    border-radius: 10px;
+
+    &-desc {
+      font-family: "SF Pro Display";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 26px;
+      padding: 18px;
+      color: $text-color-two;
+    }
+  }
+}
+
+.forw {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 18px;
+
+  &__first {
+    display: flex;
+    align-items: center;
+
+    &-icon {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 90%;
+      background: $poster-bckg;
+      width: 82px;
+      height: 82px;
+
+      &-img {
+        max-width: 35px;
+      }
+    }
+
+    &-text {
+      margin-left: 12px;
+      font-family: "Catamaran";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 24px;
+      display: flex;
+      align-items: center;
+      text-transform: capitalize;
+      color: $text-color-one;
+    }
+  }
+
+  &-checked {
+    background: $main-click;
+  }
+}

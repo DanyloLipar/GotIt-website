@@ -1,0 +1,119 @@
+@import "../../styles/blocks/vars.scss";
+@import "../../styles/blocks/mixins.scss";
+
+.cont {
+    max-width: 702px;
+    padding: 0 20px;
+    margin: 0 auto;
+    margin-bottom: 15vw;
+    margin-top: 42px;
+
+    @include onTablet {
+        max-width: 764px;
+    }
+}
+
+.headn {
+    font-family: "Catamaran";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 44px;
+    line-height: 53px;
+    color: $text-color-one;
+    margin-bottom: 11px;
+
+    @include onMobile {
+        font-size: 27px;
+        line-height: 42px;
+    }
+}
+
+.pst {
+    max-width: 1064px;
+    margin: 0 auto;
+    padding: 0 20px;
+
+    @include onTablet {
+        max-width: 764px;
+    }
+
+    &__image {
+        width: 100%;
+        border-radius: 14px;
+    }
+}
+
+.category {
+    margin-bottom: 10px;
+
+    &__link {
+        padding: 6px 18px;
+        background: $blog-btn;
+        border: 1px solid $example-border;
+        box-sizing: border-box;
+        border-radius: 67px;
+        font-family: "SF Pro Display";
+        font-style: normal;
+        font-weight: 800;
+        font-size: 12px;
+        line-height: 150%;
+        margin-right: 8px;
+        color: $text-color-one;
+        margin-bottom: 4px;
+        display: inline-block;
+    }
+}
+
+.share {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+
+    &__info {
+        font-family: "SF Pro Display";
+        font-style: normal;
+        font-weight: normal;
+        font-size: 13px;
+        letter-spacing: 0.04em;
+        color: $blog-txt;
+    }
+
+    &__photo {
+        cursor: pointer;
+    }
+
+    &__wrap {
+        position: relative;
+        cursor: pointer;
+    }
+}
+
+.cross {
+    position: absolute;
+    background: $default-white;
+    box-shadow: 0px 4px 14px rgb(66 72 131 / 14%);
+    border-radius: 6px;
+    padding: 18px;
+    padding-bottom: 0;
+    left: -110px;
+    transition: 0.7s;
+
+    &__box {
+        display: flex;
+        align-items: center;
+        margin-bottom: 18px;
+
+        &-icon {
+            margin-right: 18px;
+        }
+
+        &-text {
+            font-family: "SF Pro Display";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            align-items: center;
+            color: $blog-txt;
+        }
+    }
+}

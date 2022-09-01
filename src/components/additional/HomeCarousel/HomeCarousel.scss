@@ -1,0 +1,103 @@
+@import "../../../styles/blocks/vars.scss";
+@import "../../../styles/blocks/mixins.scss";
+
+.awards {
+  max-width: 1064px;
+  margin: 0 auto;
+  padding: 0 20px;
+
+  @include onTablet {
+    max-width: 764px;
+  }
+
+  &__title {
+    font-family: "Catamaran";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 72px;
+    text-align: center;
+    color: $text-color-one;
+
+    @include onTablet {
+      font-size: 36px;
+      line-height: 43px;
+    }
+  }
+
+  &__carousel {
+    display: flex;
+
+    @include onMobile {
+      align-items: center;
+      justify-content: center;
+    }
+
+    flex-direction: column;
+    margin: 41px auto 0;
+  }
+}
+
+.chart {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-between;
+  max-width: 1064px;
+
+  @include onTablet {
+    justify-content: center;
+    gap: 82px;
+  }
+
+  @include onMobile {
+    gap: 58px;
+  }
+
+  &__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 110px;
+    width: 110px;
+
+    @include onTablet {
+      height: 90px;
+      width: 90px;
+    }
+
+    @include onMobile {
+      height: 64px;
+      width: 64px;
+    }
+
+    & > img {
+      object-fit: contain;
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+.run {
+  display: none;
+
+  @include onMobile {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 56px;
+  }
+
+  &__item {
+    width: 10px;
+    height: 10px;
+    background: $chart-bckg;
+    border-radius: 90px;
+    border: none;
+    padding: 0;
+
+    &-active {
+      background: $main-click;
+    }
+  }
+}

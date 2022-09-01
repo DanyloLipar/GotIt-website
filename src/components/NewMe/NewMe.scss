@@ -1,0 +1,615 @@
+@import "../../styles/blocks/clinics-vars.scss";
+
+.newme {
+    &__upper {
+        padding-top: 19px;
+        background-image: url("../../assets/photos/newme/roundtop.png"), url("../../assets/photos/newme/bgt.png");
+        background-repeat: no-repeat;
+        background-size: contain, 100% 100%;
+        background-position: center, center;
+        background-position-y: 90px, -1px;
+
+        &-poster {
+            max-width: 1300px;
+            padding: 0 15px;
+            margin: 0 auto;
+
+            &>img {
+                width: 100%;
+            }
+        }
+    }
+}
+
+.strip {
+    max-width: 1276px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__text {
+        font-family: 'Segoe UI';
+        font-style: normal;
+        font-weight: 350;
+        font-size: 14px;
+        line-height: 19px;
+        color: $year-color;
+
+        &-bolder {
+            font-weight: 700;
+            color: $header-bold;
+        }
+    }
+
+    &__logo {
+        max-width: 245px;
+        transform: translateX(100px);
+
+        &-item {
+            width: 100%;
+        }
+    }
+
+    &__list {
+        display: flex;
+        list-style-type: none;
+
+        &-item {
+            display: flex;
+            align-items: center;
+            margin-left: 15px;
+
+            &::before {
+                content: "";
+                width: 6px;
+                height: 6px;
+                background: $overview-block;
+                border-radius: 50%;
+                margin-right: 10px;
+                display: block;
+            }
+
+
+            &>a {
+                font-family: 'Segoe UI';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 14px;
+                line-height: 19px;
+                margin-left: 8px;
+                color: $header-bold;
+                display: flex;
+                align-items: center;
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+.overview {
+    margin-bottom: 12vw;
+    background-image: url("../../assets/photos/newme/backs.png");
+    background-repeat: no-repeat;
+    background-position: right;
+    padding: 110px 0;
+    margin-top: 100px;
+
+    &__container {
+        max-width: 1024px;
+        margin: 0 auto;
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+
+        &-detailed {
+            padding-left: 20px;
+        }
+
+        &-other {
+            max-width: 352px;
+
+            &>img {
+                width: 100%;
+            }
+        }
+    }
+}
+
+.detailed {
+    margin-right: 60px;
+
+    &__small {
+        font-family: 'Segoe UI';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 18px;
+        color: $small-desc;
+    }
+
+    &__title {
+        font-family: 'Rufina';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 55px;
+        line-height: 77px;
+        color: $titles-color;
+    }
+
+    &__text {
+        font-family: 'Segoe UI';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: $text-color;
+        max-width: 424px;
+    }
+}
+
+.wireframes {
+    height: 100vw;
+    max-height: 1200px;
+    max-width: 1300px;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 10px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__small {
+        font-family: "Segoe UI";
+        font-style: normal;
+        font-weight: bold;
+        font-size: 12px;
+        padding-top: 75px;
+        padding-bottom: 50px;
+        color: $wirefames-small;
+    }
+
+    &__bigger {
+        font-family: "Rufina";
+        font-style: normal;
+        font-weight: bold;
+        font-size: 55px;
+        color: $wireframes-bigger;
+    }
+
+    &__down {
+        font-family: 'Segoe UI';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        text-align: center;
+        max-width: 458px;
+        color: $wirefames-text;
+        margin-top: 17px;
+    }
+
+    &__image {
+        z-index: -1;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        width: 90%;
+        height: 100%;
+        transform: translateX(-50%);
+        object-fit: cover;
+        border-radius: 10px;
+    }
+}
+
+.treatments {
+    margin-top: 104px;
+    padding-bottom: 91px;
+    background-image: url("../../assets/photos/newme/tr-bg.png");
+    background-position: bottom;
+    background-position-x: 14%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+
+    &::after {
+        content: "";
+        width: 56vw;
+        background: $treat-block;
+        border-radius: 19px;
+        position: absolute;
+        top: 10vw;
+        height: 45vw;
+        z-index: 1;
+        left: -26px;
+        max-width: 930px;
+    }
+
+    &__container {
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 1360px;
+        padding-top: 240px;
+        padding-bottom: 71px;
+        z-index: 3;
+        position: relative;
+    }
+}
+
+.pre {
+    &__desc {
+        margin-bottom: 180px;
+        padding-right: 20px;
+
+        &-small {
+            font-family: 'Segoe UI';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 12px;
+            line-height: 18px;
+            color: $small-desc;
+        }
+
+        &-title {
+            font-family: 'Rufina';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 50px;
+            line-height: 70px;
+            color: $titles-color;
+        }
+
+        &-text {
+            font-family: 'Segoe UI';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+            color: $text-color;
+            max-width: 448px;
+            margin-top: 20px;
+        }
+    }
+
+    &__photo {
+        max-width: 849px;
+        flex-grow: 1;
+
+        &>img {
+            width: 100%;
+        }
+    }
+}
+
+.facial {
+    padding-top: 18vw;
+    padding-bottom: 25vw;
+    padding-top: 18vw;
+    padding-bottom: 15vw;
+    background-image: url("../../assets/photos/newme/f-bg.png");
+    position: relative;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: 70%;
+
+    &::after {
+        content: "";
+        width: 60vw;
+        background: #EBF1F2;
+        border-radius: 19px;
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 0px;
+        position: absolute;
+        top: 180px;
+        height: 33vw;
+        z-index: 1;
+        right: 0;
+        max-width: 930px;
+    }
+
+    &-desc {
+        padding-right: 0;
+        padding-left: 20px;
+        margin-bottom: 350px;
+    }
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1360px;
+        margin: 0 auto;
+        position: relative;
+        z-index: 3;
+    }
+
+    &-photo {
+        max-width: 730px;
+
+        &>img {
+            width: 100%;
+        }
+    }
+
+    &__used {
+        max-width: 1276px;
+        margin: 0 auto;
+        padding: 0 20px;
+        margin-top: 245px;
+    }
+}
+
+.ingredients {
+    display: flex;
+    justify-content: space-between;
+    background: $facial-used-bg;
+    border-radius: 19px;
+    padding: 5vw;
+
+    &__first {
+
+        &-big {
+            font-family: 'Segoe UI';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 40px;
+            line-height: 56px;
+            color: $titles-color;
+        }
+
+        &-letters {
+            max-width: 497px;
+            margin-top: 23px;
+            margin-bottom: 163px;
+
+            &>img {
+                width: 100%;
+            }
+        }
+    }
+
+    &__icons {
+        &-photo {
+            width: 100%;
+            margin-top: 27px;
+        }
+    }
+}
+
+.variety {
+    display: flex;
+    margin-top: 60px;
+
+    &__box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-right: 42px;
+
+        &:first-of-type>.rd {
+            background: $titles-color;
+        }
+
+        &:nth-of-type(2)>.rd {
+            background: $rounded-two;
+        }
+
+        &:nth-of-type(3)>.rd {
+            background: $rounded-three;
+        }
+
+        &:nth-of-type(4)>.rd {
+            background: $rounded-four;
+        }
+
+        &:nth-of-type(5)>.rd {
+            background: $rounded-five;
+        }
+
+        &:nth-of-type(6)>.rd {
+            background: $default-white;
+        }
+
+        &-rounded {
+            width: 80px;
+            height: 80px;
+            border-radius: 90px;
+        }
+
+        &-hex {
+            font-family: 'Segoe UI';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 22px;
+            color: $titles-color;
+            margin-top: 12px;
+        }
+    }
+}
+
+.notions {
+    &__simple {
+        font-family: 'Segoe UI';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 18px;
+        color: $small-desc;
+    }
+
+    &__title {
+        font-family: 'Rufina';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 56px;
+        color: $titles-color;
+        margin-top: 5px;
+    }
+}
+
+.toolkit {
+    padding: 0 30px;
+    max-width: 910px;
+    margin: 0 auto;
+    margin-top: 150px;
+
+    &__container {
+        background-image: url("../../assets//photos/newme/tool-bg.png");
+        background-size: 100% 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 370px 0;
+        position: relative;
+
+        &-mean {
+            &-sml {
+                font-family: "Segoe UI";
+                font-style: normal;
+                font-weight: bold;
+                font-size: 12px;
+                color: $small-desc;
+                text-align: center;
+            }
+
+            &-tit {
+                font-family: "Rufina";
+                font-style: normal;
+                text-align: center;
+                font-weight: bold;
+                font-size: 40px;
+                color: $titles-color;
+                padding-top: 25px;
+            }
+        }
+    }
+}
+
+.tools {
+    &__figma {
+        position: absolute;
+        left: 160px;
+        bottom: 60px;
+    }
+
+    &__ps {
+        position: absolute;
+        left: 80px;
+        top: 180px;
+    }
+
+    &__ai {
+        position: absolute;
+        right: 50px;
+    }
+
+    &__sketch {
+        position: absolute;
+        top: 80px;
+    }
+}
+
+.book {
+    padding-top: 18vw;
+    background-image: url("../../assets/photos/newme/b-bg.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+
+    &::after {
+        content: "";
+        width: 57vw;
+        background: $treat-block;
+        border-radius: 19px;
+        border-top-left-radius: 0px;
+        border-bottom-left-radius: 0px;
+        position: absolute;
+        top: 16vw;
+        height: 38vw;
+        z-index: 1;
+        left: 0;
+        max-width: 930px;
+    }
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1360px;
+        margin: 0 auto;
+        position: relative;
+        z-index: 3;
+
+        &-other {
+            max-width: 730px;
+
+            &>img {
+                width: 100%;
+            }
+        }
+    }
+}
+
+.screen {
+    margin-top: 11vw;
+    background-image: url("../../assets/photos/newme/bg-screen.png");
+    background-repeat: no-repeat;
+    background-position: top right;
+
+    &__title {
+        max-width: 1276px;
+        margin: 0 auto;
+        padding-top: 6vw;
+        padding-left: 6vw;
+        padding-right: 20px;
+
+        &-small {
+            font-family: "Segoe UI";
+            font-style: normal;
+            font-weight: bold;
+            font-size: 12px;
+            color: $small-desc;
+        }
+
+        &-big {
+            font-family: "Rufina";
+            font-style: normal;
+            font-weight: bold;
+            font-size: 55px;
+            padding-top: 35px;
+            color: $titles-color;
+        }
+    }
+}
+
+.phbox {
+    max-width: 1270px;
+    margin: 0 auto;
+    background: $facial-used-bg;
+    border-radius: 19px;
+    padding: 5vw 0;
+    margin-top: 65px;
+    width: 90vw;
+
+    &__top,
+    &__bottom {
+        display: flex;
+        justify-content: space-between;
+
+        &-image {
+            &>img {
+                width: 100%;
+            }
+        }
+    }
+}
+
+.clinics-tit {
+    color: $titles-color;
+}

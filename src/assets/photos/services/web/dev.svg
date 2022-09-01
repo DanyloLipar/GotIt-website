@@ -1,0 +1,17 @@
+<svg width="47" height="47" viewBox="0 0 47 47" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M1 10.3506H45.4231V41.9999C45.4231 44.2091 43.6322 45.9999 41.4231 45.9999H5C2.79086 45.9999 1 44.2091 1 41.9999V10.3506Z" fill="white"/>
+<path d="M1 4C1 2.34315 2.34315 1 4 1H42C44.2091 1 46 2.79086 46 5V10.3506H1V4Z" fill="white"/>
+<ellipse cx="31.3032" cy="5.50635" rx="0.880369" ry="1" fill="#0D0B49"/>
+<ellipse cx="36.2251" cy="5.50635" rx="0.880369" ry="1" fill="#0D0B49"/>
+<ellipse cx="41.1394" cy="5.50635" rx="0.880369" ry="1" fill="#0D0B49"/>
+<path d="M16.5754 14.4414L18.0233 17.1303C18.1976 17.4539 18.1802 17.8471 17.9782 18.1541L16.5754 20.2856" stroke="#0D0B49" stroke-width="1.2" stroke-linecap="round"/>
+<path d="M7.34497 14.4414L5.50071 17.0102C5.22937 17.3881 5.25452 17.9033 5.56139 18.253L7.34497 20.2856" stroke="#0D0B49" stroke-width="1.2" stroke-linecap="round"/>
+<path d="M5.03931 25.8379H11.097M7.347 29.3444H18.8855M5.03931 32.8509H13.6932" stroke="#0D0B49" stroke-width="1.2" stroke-linecap="round"/>
+<path d="M7.63462 1H5C2.79086 1 1 2.79086 1 5V10.3506M14.5577 1H41.7115C43.9207 1 45.7115 2.79086 45.7115 5V10.3506M20.6154 5.67532H6.19231M1 10.3506V42C1 44.2091 2.79086 46 5 46H22.0577M1 10.3506H22.0577M45.7115 10.3506V42C45.7115 44.2091 43.9207 46 41.7115 46H22.0577M45.7115 10.3506H22.0577M22.0577 10.3506V46" stroke="#0D0B49" stroke-width="1.2" stroke-linecap="round"/>
+<path d="M10.5166 20.2853L13.6897 14.7334" stroke="#0D0B49" stroke-width="1.2" stroke-linecap="round"/>
+<path d="M6.19312 35.7725H12.2508" stroke="#0D0B49" stroke-width="1.2" stroke-linecap="round"/>
+<path d="M5.03931 38.9868H11.097" stroke="#0D0B49" stroke-width="1.2" stroke-linecap="round"/>
+<path d="M6.76904 41.9092H14.846" stroke="#0D0B49" stroke-width="1.2" stroke-linecap="round"/>
+<rect x="24.6558" y="14.4414" width="17.8846" height="10.5195" rx="3" fill="#FF9B21" stroke="#0D0B49" stroke-width="1.2"/>
+<rect x="24.6558" y="27.8828" width="17.8846" height="14.026" rx="3" fill="#5C63AB" stroke="#0D0B49" stroke-width="1.2"/>
+</svg>

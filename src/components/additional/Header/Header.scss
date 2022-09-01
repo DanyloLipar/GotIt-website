@@ -1,0 +1,243 @@
+@import '../../../styles/blocks/vars.scss';
+@import "../../../styles/blocks/mixins.scss";
+
+.header {
+    width: 100%;
+    position: fixed;
+    z-index: 99999;
+    background: $default-white;
+    box-shadow: 0px 4px 24px rgba(59, 60, 69, 0.06);
+    top: 0;
+}
+
+.burger {
+    display: none;
+
+    @include onMobile {
+        display: block;
+    }
+
+    &__first,
+    &__second,
+    &__third {
+        width: 29px;
+        height: 3px;
+        background: $header-links;
+        border-radius: 2px;
+    }
+
+    &__second,
+    &__third {
+        margin-top: 6px;
+    }
+}
+
+.opnd {
+    transition: transform 0.4s;
+
+    &:first-child {
+        transform: rotate(-45deg) translate(-8px, 6px);
+    }
+
+    &:nth-child(2) {
+        opacity: 0;
+    }
+
+    &:nth-child(3) {
+        transform: rotate(45deg) translate(-6px, -5px);
+    }
+}
+
+.heading {
+    max-width: 1500px;
+    padding-top: 16px;
+    padding-bottom: 17px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 94vw;
+    min-width: 300px;
+    margin: 0 auto;
+
+    @include onTablet {
+        max-width: 764px;
+    }
+
+    &__logo {
+        display: block;
+        width: 140px;
+        box-sizing: border-box;
+        margin-right: 100px;
+
+        @include onTablet {
+            width: 100px;
+        }
+
+        &-image {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    &__menu {
+        max-width: 880px;
+        flex-grow: 1;
+
+        @include onMobile {
+            display: none;
+        }
+    }
+}
+
+.links {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none;
+
+    &__link {
+        height: 100%;
+
+        &-item {
+            font-weight: 600;
+            font-size: 16px;
+            font-family: 'SF Pro Display';
+            color: $header-links;
+            line-height: 19.09px;
+            letter-spacing: 0.02em;
+            text-decoration: none;
+            transition: 0.3s;
+            cursor: pointer;
+
+            @include onTablet {
+                font-size: 14px;
+                line-height: 17px;
+            }
+
+            &:hover {
+                color: $header-link-hovered;
+            }
+        }
+    }
+}
+
+.parent {
+    position: relative;
+    cursor: pointer;
+}
+
+.submenu {
+    transition: 0.4s;
+    position: absolute;
+    z-index: 2;
+    padding: 28px;
+    padding-bottom: 0px;
+    background: $default-white;
+    box-shadow: 0px 24px 24px rgba(53, 52, 116, 0.06);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    min-width: 240px;
+    top: 50px;
+    list-style-type: none;
+
+    &::before {
+        content: "";
+        width: 200px;
+        height: 40px;
+        z-index: 4;
+        position: absolute;
+        top: -39px;
+        left: -40px;
+    }
+
+    &__link {
+        box-sizing: border-box;
+
+        &-text {
+            font-weight: 600;
+            font-size: 16px;
+            font-family: 'SF Pro Display';
+            display: block;
+            letter-spacing: 0.02em;
+            padding-bottom: 25px;
+            color: $header-links;
+            text-decoration: none;
+        }
+    }
+}
+
+.nav {
+    height: 100vh;
+    overflow-y: hidden;
+
+    &__list {
+        padding-left: 17px;
+        list-style-type: none;
+
+        &-link {
+            padding-top: 40px;
+
+            &>a {
+                font-family: 'SF Pro Display';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 20px;
+                line-height: 24px;
+                letter-spacing: 0.02em;
+                color: $header-links;
+            }
+        }
+    }
+}
+
+.srv {
+    &__box {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 40px;
+        padding-right: 16px;
+
+        &-link {
+            font-family: 'SF Pro Display';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 24px;
+            letter-spacing: 0.02em;
+            color: $header-links;
+        }
+
+        &-polygon {
+            transition: transform 0.3s;
+            transform: rotate(-90deg);
+
+            &>img {
+                width: 100%;
+            }
+        }
+    }
+
+    &__other {
+        list-style-type: none;
+
+        &-link {
+            padding-top: 24px;
+
+            &>a {
+                font-family: 'SF Pro Display';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 19px;
+                letter-spacing: 0.02em;
+                color: $header-links;
+            }
+        }
+    }
+}
+
+.polygon-opened {
+    transform: none;
+}

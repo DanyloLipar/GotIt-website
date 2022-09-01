@@ -1,0 +1,462 @@
+@import "../../styles/blocks/miia-vars.scss";
+
+.miia {
+    &__heading {
+        display: flex;
+        justify-content: center;
+    }
+
+    &__gen {
+        &-parallax {
+            height: 836px;
+            background: url("../../assets/photos/miia/back.png");
+            background-size: cover;
+            background-attachment: fixed;
+        }
+    }
+}
+
+.contain {
+    display: flex;
+    align-items: center;
+    padding-top: 94px;
+    padding-bottom: 105px;
+
+    &__big {
+        font-family: 'Merriweather';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 56px;
+        line-height: 67px;
+        text-align: center;
+        color: $miia-title-one;
+
+        &-small {
+            margin-left: 16px;
+            font-family: 'Lato';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 29px;
+            color: $miia-second-text;
+        }
+    }
+}
+
+.challenge {
+    max-width: 1064px;
+    padding: 0 20px;
+    margin: 0 auto;
+    margin-top: 180px;
+
+    &__txt {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &-title {
+            font-family: 'Merriweather';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 48px;
+            line-height: 72px;
+            text-align: center;
+            color: $miia-title-one;
+        }
+
+        &-simple {
+            font-family: 'Lato';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 29px;
+            text-align: center;
+            color: $miia-second-text;
+            max-width: 844px;
+            margin-top: 20px;
+        }
+    }
+}
+
+.mobi {
+    margin-top: 122px;
+    background-image: url("../../assets/photos/miia/linear.svg");
+    background-size: cover;
+    background-position: 87%;
+
+    &__container {
+        margin: 0 auto;
+        max-width: 1064px;
+        padding: 0 20px;
+
+    }
+}
+
+.inf {
+    &__big {
+        font-family: Merriweather;
+        font-style: normal;
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 72px;
+        color: $miia-title-one;
+    }
+
+    &__small {
+        font-family: "Lato";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 29px;
+        color: $miia-second-text;
+        margin-top: 20px;
+
+        &:first-of-type {
+            max-width: 654px;
+        }
+
+        &:nth-of-type(2) {
+            max-width: 487px;
+        }
+    }
+}
+
+.iphones {
+    position: relative;
+    margin-top: 42px;
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        &-box {
+            max-width: 277px;
+            z-index: 2;
+
+            &>img {
+                width: 100%;
+            }
+
+            &:nth-child(1),
+            &:nth-child(3),
+            &:nth-child(4),
+            &:nth-child(6) {
+                margin-top: 80px;
+            }
+        }
+    }
+
+    &__leafs {
+        position: absolute;
+        z-index: 0;
+        top: 15%;
+        left: -9%;
+
+        &-img {
+            width: 100%;
+        }
+    }
+}
+
+.colors {
+    margin-top: 241px;
+
+    &__container {
+        max-width: 1064px;
+        margin: 0 auto;
+        padding: 0 20px;
+
+        &-title {
+            font-family: 'Merriweather';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 48px;
+            line-height: 72px;
+            color: $miia-title-two;
+        }
+    }
+}
+
+.palette {
+    display: flex;
+    width: 100%;
+    margin-top: 42px;
+
+    &__color {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 290px;
+        width: 100%;
+
+        &-cube {
+            height: 19px;
+            width: 19px;
+            border-radius: 2px;
+        }
+
+        &-col {
+            height: 24px;
+            width: 1px;
+        }
+
+        &-gen {
+            height: 93px;
+            max-width: 290px;
+            width: 100%;
+            border-radius: 13px;
+        }
+
+        &-txt {
+            font-family: 'Lato';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 29px;
+            color: $miia-title-two;
+        }
+
+        &:first-of-type {
+            z-index: 4;
+
+            &>.base {
+                background: $used-one;
+            }
+
+            &>p {
+                margin-bottom: 8px;
+            }
+        }
+
+        &:nth-of-type(2) {
+            margin-top: 80px;
+            position: relative;
+            left: -18px;
+            z-index: 3;
+
+            &>.base {
+                background: $used-two;
+            }
+
+            &>p {
+                margin-top: 8px;
+            }
+        }
+
+
+        &:nth-of-type(3) {
+            position: relative;
+            left: -36px;
+            z-index: 2;
+
+            &>.base {
+                background: $used-three;
+            }
+
+            &>p {
+                margin-bottom: 8px;
+            }
+        }
+
+        &:nth-of-type(4) {
+            margin-top: 80px;
+            position: relative;
+            left: -54px;
+            z-index: 1;
+
+            &>.base {
+                background: $used-four;
+            }
+
+            &>p {
+                margin-top: 8px;
+            }
+        }
+    }
+}
+
+.fonts {
+    margin-top: 12px;
+    background: url("../../assets/photos/miia/bottom-linear.svg");
+    background-size: cover;
+
+    &__container {
+        max-width: 1064px;
+        margin: 0 auto;
+        padding: 187px 20px 100px;
+
+        &-title {
+            font-family: 'Merriweather';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 48px;
+            line-height: 72px;
+            color: $miia-title-two;
+        }
+    }
+}
+
+.difference {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.font {
+    display: flex;
+    align-items: center;
+
+    &:first-of-type {
+        font-family: 'Merriweather';
+
+        &>div>span {
+            font-family: 'Montserrat';
+
+        }
+    }
+
+    &:nth-of-type(2) {
+        font-family: 'Lato';
+    }
+
+    &__letters {
+        font-weight: 700;
+        font-size: 38px;
+        line-height: 62px;
+        letter-spacing: -0.02em;
+    }
+
+    &__box {
+        color: $miia-title-one;
+        margin-left: 22px;
+
+        &-name {
+            font-weight: 700;
+            font-size: 22px;
+            line-height: 36px;
+            margin-bottom: 24px;
+        }
+
+        &-upper {
+            font-weight: 700;
+            font-size: 22px;
+            line-height: 28px;
+            letter-spacing: 0.06em;
+            text-transform: capitalize;
+        }
+
+        &-lower {
+            font-weight: 400;
+            font-size: 22px;
+            line-height: 27px;
+            letter-spacing: 0.06em;
+            text-transform: lowercase;
+        }
+    }
+}
+
+.solution {
+    display: flex;
+    align-items: center;
+    position: relative;
+    background-image: url("../../assets/photos/miia/leafs.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: 110px;
+
+    &__photo {
+        max-width: 972px;
+
+        &-item {
+            width: 100%;
+        }
+    }
+
+    &__desc {
+        padding-right: 20px;
+
+        &-title {
+            font-family: 'Merriweather';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 48px;
+            line-height: 72px;
+            color: $miia-title-two;
+        }
+
+        &-text {
+            font-family: 'Lato';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 29px;
+            color: $miia-second-text;
+            max-width: 380px;
+        }
+    }
+}
+
+.check {
+    max-width: 1064px;
+    margin: 0 auto;
+    margin-top: 162px;
+    padding-bottom: 133px;
+
+    &__title {
+        font-family: 'Catamaran';
+        font-style: normal;
+        font-weight: 800;
+        font-size: 50px;
+        line-height: 60px;
+        color: $miia-title-two;
+        text-align: center;
+    }
+
+    &__projects {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 54px;
+        padding: 0 20px;
+    }
+}
+
+.inset {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__photo {
+        max-width: 233px;
+        cursor: pointer;
+
+        &-item {
+            width: 100%;
+        }
+
+        &:hover {
+            transition: transform 0.5s;
+            transform: scale(1.1);
+        }
+    }
+
+    &__title {
+        margin-top: 19px;
+        font-family: 'Catamaran';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 30px;
+        color: $miia-title-two;
+        cursor: pointer;
+    }
+
+    &__text {
+        font-family: 'Lato';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 26px;
+        color: $miia-second-text;
+    }
+}

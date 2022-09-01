@@ -1,0 +1,17 @@
+<svg width="52" height="46" viewBox="0 0 52 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M1 10.2002H50.6482V41.2763C50.6482 43.4854 48.8573 45.2763 46.6482 45.2763H5C2.79086 45.2763 1 43.4854 1 41.2763V10.2002Z" fill="white"/>
+<path d="M1 4C1 2.34314 2.34315 1 4 1H47.293C49.5021 1 51.293 2.79086 51.293 5V10.2003H1V4Z" fill="white"/>
+<ellipse cx="34.9516" cy="5.40337" rx="1.06882" ry="0.953174" fill="#0D0B49"/>
+<ellipse cx="40.4594" cy="5.40337" rx="1.06882" ry="0.953174" fill="#0D0B49"/>
+<ellipse cx="45.9516" cy="5.40337" rx="1.06882" ry="0.953174" fill="#0D0B49"/>
+<path d="M18.4102 14.2256L19.991 16.8103C20.2045 17.1593 20.1838 17.6031 19.9389 17.9308L18.4102 19.9758" stroke="#0D0B49" stroke-width="1.2" stroke-linecap="round"/>
+<path d="M8.09082 14.2256L6.08178 16.6891C5.75788 17.0863 5.78668 17.6641 6.14849 18.0271L8.09082 19.9758" stroke="#0D0B49" stroke-width="1.2" stroke-linecap="round"/>
+<path d="M5.51465 25.4385H12.2849M8.09378 28.8886H20.9894M5.51465 32.3387H15.1864" stroke="#0D0B49" stroke-width="1.2" stroke-linecap="round"/>
+<path d="M8.41499 1H5C2.79086 1 1 2.79086 1 5V10.2003M16.1524 1H46.9706C49.1797 1 50.9706 2.79086 50.9706 5V10.2003M22.9226 5.60014H6.80303M1 10.2003V41.2764C1 43.4855 2.79086 45.2764 5 45.2764H24.5345M1 10.2003H24.5345M50.9706 10.2003V41.2764C50.9706 43.4855 49.1797 45.2764 46.9706 45.2764H24.5345M50.9706 10.2003H24.5345M24.5345 10.2003V45.2764" stroke="#0D0B49" stroke-width="1.2" stroke-linecap="round"/>
+<path d="M11.6436 19.9759L15.1899 14.5132" stroke="#0D0B49" stroke-width="1.2" stroke-linecap="round"/>
+<path d="M6.80469 35.2129H13.5749" stroke="#0D0B49" stroke-width="1.2" stroke-linecap="round"/>
+<path d="M5.51465 38.376H12.2849" stroke="#0D0B49" stroke-width="1.2" stroke-linecap="round"/>
+<path d="M7.44531 41.2515H16.4723" stroke="#0D0B49" stroke-width="1.2" stroke-linecap="round"/>
+<rect x="27.4297" y="14.2256" width="19.9882" height="10.3503" rx="3" fill="#FF9B21" stroke="#0D0B49" stroke-width="1.2"/>
+<rect x="27.4297" y="27.4507" width="19.9882" height="13.8004" rx="3" fill="#5C63AB" stroke="#0D0B49" stroke-width="1.2"/>
+</svg>

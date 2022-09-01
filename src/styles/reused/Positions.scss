@@ -1,0 +1,373 @@
+@import "../../styles/blocks/vars.scss";
+@import "../../styles/blocks/mixins.scss";
+
+.position {
+    margin-top: 234px;
+
+    @include onMobile {
+        margin-top: 170px;
+    }
+
+    &__container {
+        max-width: 1064px;
+        padding: 0 20px;
+        margin: 0 auto;
+
+        @include onTablet {
+            max-width: 764px;
+        }
+    }
+}
+
+.important {
+    &__title {
+        font-family: 'Catamaran';
+        font-style: normal;
+        max-width: 559px;
+        font-weight: 800;
+        font-size: 44px;
+        line-height: 53px;
+        color: $text-color-one;
+
+        @include onTablet {
+            font-size: 36px;
+            line-height: 43px;
+        }
+    }
+
+    &__details {
+        display: flex;
+        gap: 24px;
+        margin-top: 18px;
+        margin-bottom: 42px;
+
+        @include onMobile {
+            flex-wrap: wrap;
+        }
+    }
+
+    &__apply {
+        padding: 18px 52px;
+        background: $main-click;
+        border-radius: 90px;
+        font-family: 'SF Pro Display';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 19px;
+        letter-spacing: 0.02em;
+        color: $default-white;
+
+        @include onMobile {
+            padding: 18px 44px;
+        }
+
+        @include onMobile {
+            font-size: 14px;
+            line-height: 17px;
+        }
+    }
+
+    &__desc {
+        font-family: 'SF Pro Display';
+        font-style: normal;
+        max-width: 554px;
+        font-weight: 400;
+        font-size: 19px;
+        line-height: 30px;
+        color: $blog-txt;
+        margin-top: 48px;
+
+        @include onMobile {
+            font-size: 18px;
+            line-height: 29px;
+        }
+
+        &>span {
+            display: block;
+            margin-top: 14px;
+            max-width: 540px;
+        }
+    }
+}
+
+.holder {
+    background: $poster-bckg;
+    border-radius: 11px;
+
+    &__box {
+        display: flex;
+        align-items: center;
+        padding: 14px;
+
+        &-text {
+            margin-left: 10px;
+            font-family: 'SF Pro Display';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 29px;
+            color: $text-color-one;
+
+
+            @include onMobile {
+                font-size: 16px;
+                line-height: 26px;
+            }
+        }
+    }
+}
+
+.circs {
+    &__list {
+        margin-top: 58px;
+
+        &-title {
+            font-family: 'Catamaran';
+            font-style: normal;
+            font-weight: 800;
+            font-size: 30px;
+            line-height: 45px;
+            display: flex;
+            align-items: center;
+            color: $text-color-one;
+
+            @include onMobile {
+                font-size: 20px;
+                line-height: 30px;
+            }
+        }
+
+        &-own {
+            margin-left: 18px;
+            margin-top: 13px;
+
+            &>li {
+                font-family: 'SF Pro Display';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 29px;
+                color: $text-color-one;
+                max-width: 482px;
+
+                @include onMobile {
+                    font-size: 17px;
+                    line-height: 27px;
+                }
+            }
+        }
+    }
+}
+
+.application {
+    background: $applying-bckg;
+    padding: 0 20px;
+    margin-top: 213px;
+
+    @include onTablet {
+        margin-top: 150px;
+    }
+
+    &__container {
+        margin: 0 auto;
+        max-width: 1064px;
+        padding: 84px 0;
+
+        @include onTablet {
+            max-width: 764px;
+        }
+
+        @include onMobile {
+            padding: 74px 0;
+        }
+
+        &-gen {
+            font-family: 'Catamaran';
+            font-style: normal;
+            font-weight: 800;
+            font-size: 42px;
+            line-height: 50px;
+            color: $default-white;
+
+            @include onMobile {
+                font-size: 30px;
+                line-height: 36px;
+            }
+        }
+    }
+}
+
+.frm {
+    margin-top: 74px;
+
+    @include onMobile {
+        margin-top: 0;
+    }
+
+    &__blocks {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 33px;
+
+        @include onMobile {
+            flex-direction: column;
+        }
+    }
+
+    &__submition {
+        padding: 18px 42px;
+        border-radius: 90px;
+        border: none;
+        background: $default-white;
+        font-family: 'SF Pro Display';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 19px;
+        letter-spacing: 0.02em;
+        color: $main-click;
+        cursor: pointer;
+
+        @include onMobile {
+            font-size: 14px;
+            line-height: 17px;
+            padding: 17px 42px 19px;
+        }
+    }
+
+    &__result {
+        font-family: 'SF Pro Display';
+        font-style: normal;
+        font-weight: 400;
+        color: $default-white;
+        font-size: 14px;
+        line-height: 22px;
+        margin-top: 15px;
+    }
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+
+    @include onTablet {
+        width: 45%;
+    }
+
+    @include onMobile {
+        width: 100%;
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 61px;
+
+        &-error {
+            font-family: 'SF Pro Display';
+            font-style: normal;
+            font-weight: 400;
+            color: $default-white;
+            font-size: 14px;
+            margin-top: 4px;
+        }
+
+        &-inpt {
+            border: none;
+            background: $main-click;
+            border-bottom: 1px solid $applying-brdr;
+            padding-bottom: 15px;
+            font-family: 'SF Pro Display';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+            color: $placeholder-txt;
+
+            &:focus {
+                outline: none;
+            }
+
+            &::placeholder {
+                font-family: 'SF Pro Display';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 24px;
+                color: $placeholder-txt;
+            }
+        }
+    }
+
+    &__file {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 53px;
+
+        @include onTablet {
+            flex-direction: column;
+            margin-top: 63px;
+        }
+
+        &-desc {
+            max-width: 228px;
+            font-family: 'SF Pro Display';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 21px;
+            color: $file-txt;
+
+            @include onTablet {
+                font-size: 13px;
+                line-height: 20px;
+                margin-top: 10px;
+            }
+        }
+
+        &-all {
+            &>input {
+                display: none;
+            }
+        }
+    }
+}
+
+.objects {
+    display: flex;
+    align-items: center;
+    font-family: 'SF Pro Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: $placeholder-txt;
+    cursor: pointer;
+
+    &__block {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #6972C2;
+        border: 1px solid #6972C2;
+        max-width: 48px;
+        width: 48px;
+        height: 48px;
+        border-radius: 90px;
+        margin-right: 12px;
+
+        @include onTablet {
+            margin-right: 8px;
+            width: 40px;
+            height: 40px;
+        }
+
+
+        &-get {
+            display: none;
+        }
+    }
+}

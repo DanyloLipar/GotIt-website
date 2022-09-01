@@ -1,0 +1,38 @@
+@import "../../../styles/blocks/vars.scss";
+@import "../../../styles/blocks/mixins.scss";
+
+
+.finest {
+    padding-top: 184px;
+
+    @include onTablet {
+        padding-top: 140px;
+    }
+
+    @include onTablet {
+        padding-top: 120px;
+    }
+
+
+    &__content {
+
+        &-text {
+            font-family: "SF Pro Display";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 19px;
+            line-height: 30px;
+            color: $blog-txt;
+            margin-bottom: 42px;
+
+            &>a {
+                text-decoration: underline;
+                font-style: italic;
+            }
+        }
+
+        &-rating {
+            margin: 15px 0;
+        }
+    }
+}
